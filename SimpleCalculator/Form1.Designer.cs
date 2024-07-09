@@ -50,7 +50,7 @@
             Point = new Button();
             Pi = new Button();
             Power = new Button();
-            button5 = new Button();
+            Delete = new Button();
             SuspendLayout();
             // 
             // Clear
@@ -65,7 +65,7 @@
             // 
             // NaturalLog
             // 
-            NaturalLog.Location = new Point(87, 132);
+            NaturalLog.Location = new Point(81, 132);
             NaturalLog.Name = "NaturalLog";
             NaturalLog.Size = new Size(65, 54);
             NaturalLog.TabIndex = 1;
@@ -75,7 +75,7 @@
             // 
             // Sqrt
             // 
-            Sqrt.Location = new Point(158, 132);
+            Sqrt.Location = new Point(146, 132);
             Sqrt.Name = "Sqrt";
             Sqrt.Size = new Size(65, 54);
             Sqrt.TabIndex = 2;
@@ -85,7 +85,7 @@
             // 
             // Add
             // 
-            Add.Location = new Point(229, 312);
+            Add.Location = new Point(211, 294);
             Add.Name = "Add";
             Add.Size = new Size(65, 54);
             Add.TabIndex = 3;
@@ -95,12 +95,13 @@
             // 
             // Output
             // 
-            Output.BackColor = SystemColors.ControlLightLight;
-            Output.Font = new Font("Symbol", 24F, FontStyle.Bold, GraphicsUnit.Point, 2);
-            Output.Location = new Point(16, 44);
+            Output.BackColor = SystemColors.ControlLight;
+            Output.BorderStyle = BorderStyle.None;
+            Output.Font = new Font("Trebuchet MS", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Output.Location = new Point(16, 34);
             Output.Name = "Output";
             Output.ReadOnly = true;
-            Output.Size = new Size(278, 47);
+            Output.Size = new Size(260, 75);
             Output.TabIndex = 4;
             Output.Text = "0";
             Output.TextAlign = HorizontalAlignment.Right;
@@ -108,7 +109,7 @@
             // 
             // Seven
             // 
-            Seven.Location = new Point(16, 192);
+            Seven.Location = new Point(16, 186);
             Seven.Name = "Seven";
             Seven.Size = new Size(65, 54);
             Seven.TabIndex = 5;
@@ -118,7 +119,7 @@
             // 
             // Eight
             // 
-            Eight.Location = new Point(87, 192);
+            Eight.Location = new Point(81, 186);
             Eight.Name = "Eight";
             Eight.Size = new Size(65, 54);
             Eight.TabIndex = 6;
@@ -128,7 +129,7 @@
             // 
             // Nine
             // 
-            Nine.Location = new Point(158, 192);
+            Nine.Location = new Point(146, 186);
             Nine.Name = "Nine";
             Nine.Size = new Size(65, 54);
             Nine.TabIndex = 7;
@@ -138,7 +139,7 @@
             // 
             // Divide
             // 
-            Divide.Location = new Point(229, 132);
+            Divide.Location = new Point(211, 132);
             Divide.Name = "Divide";
             Divide.Size = new Size(65, 54);
             Divide.TabIndex = 8;
@@ -148,7 +149,7 @@
             // 
             // Multiply
             // 
-            Multiply.Location = new Point(229, 192);
+            Multiply.Location = new Point(211, 186);
             Multiply.Name = "Multiply";
             Multiply.Size = new Size(65, 54);
             Multiply.TabIndex = 9;
@@ -158,7 +159,7 @@
             // 
             // Six
             // 
-            Six.Location = new Point(158, 252);
+            Six.Location = new Point(146, 240);
             Six.Name = "Six";
             Six.Size = new Size(65, 54);
             Six.TabIndex = 10;
@@ -168,7 +169,7 @@
             // 
             // Five
             // 
-            Five.Location = new Point(87, 252);
+            Five.Location = new Point(81, 240);
             Five.Name = "Five";
             Five.Size = new Size(65, 54);
             Five.TabIndex = 11;
@@ -178,7 +179,7 @@
             // 
             // Four
             // 
-            Four.Location = new Point(16, 252);
+            Four.Location = new Point(16, 240);
             Four.Name = "Four";
             Four.Size = new Size(65, 54);
             Four.TabIndex = 12;
@@ -188,7 +189,7 @@
             // 
             // One
             // 
-            One.Location = new Point(16, 312);
+            One.Location = new Point(16, 294);
             One.Name = "One";
             One.Size = new Size(65, 54);
             One.TabIndex = 13;
@@ -198,7 +199,7 @@
             // 
             // Two
             // 
-            Two.Location = new Point(87, 312);
+            Two.Location = new Point(81, 294);
             Two.Name = "Two";
             Two.Size = new Size(65, 54);
             Two.TabIndex = 14;
@@ -208,7 +209,7 @@
             // 
             // Three
             // 
-            Three.Location = new Point(158, 312);
+            Three.Location = new Point(146, 294);
             Three.Name = "Three";
             Three.Size = new Size(65, 54);
             Three.TabIndex = 15;
@@ -218,7 +219,7 @@
             // 
             // Subtract
             // 
-            Subtract.Location = new Point(229, 252);
+            Subtract.Location = new Point(211, 240);
             Subtract.Name = "Subtract";
             Subtract.Size = new Size(65, 54);
             Subtract.TabIndex = 16;
@@ -228,19 +229,21 @@
             // 
             // Equals
             // 
-            Equals.Location = new Point(229, 372);
+            Equals.BackColor = Color.Silver;
+            Equals.Location = new Point(211, 348);
+            Equals.Margin = new Padding(0);
             Equals.Name = "Equals";
-            Equals.Size = new Size(65, 114);
+            Equals.Size = new Size(65, 109);
             Equals.TabIndex = 17;
             Equals.Text = "=";
-            Equals.UseVisualStyleBackColor = true;
+            Equals.UseVisualStyleBackColor = false;
             Equals.Click += Equals_Click;
             // 
             // Zero
             // 
-            Zero.Location = new Point(16, 372);
+            Zero.Location = new Point(16, 349);
             Zero.Name = "Zero";
-            Zero.Size = new Size(136, 54);
+            Zero.Size = new Size(130, 54);
             Zero.TabIndex = 18;
             Zero.Text = "0";
             Zero.UseVisualStyleBackColor = true;
@@ -248,7 +251,7 @@
             // 
             // Point
             // 
-            Point.Location = new Point(158, 372);
+            Point.Location = new Point(146, 349);
             Point.Name = "Point";
             Point.Size = new Size(65, 54);
             Point.TabIndex = 19;
@@ -258,7 +261,7 @@
             // 
             // Pi
             // 
-            Pi.Location = new Point(16, 432);
+            Pi.Location = new Point(16, 403);
             Pi.Name = "Pi";
             Pi.Size = new Size(65, 54);
             Pi.TabIndex = 20;
@@ -268,7 +271,7 @@
             // 
             // Power
             // 
-            Power.Location = new Point(87, 432);
+            Power.Location = new Point(81, 403);
             Power.Name = "Power";
             Power.Size = new Size(65, 54);
             Power.TabIndex = 21;
@@ -276,22 +279,23 @@
             Power.UseVisualStyleBackColor = true;
             Power.Click += Power_Click;
             // 
-            // button5
+            // Delete
             // 
-            button5.Location = new Point(158, 432);
-            button5.Name = "button5";
-            button5.Size = new Size(65, 54);
-            button5.TabIndex = 22;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
+            Delete.Location = new Point(146, 403);
+            Delete.Name = "Delete";
+            Delete.Size = new Size(65, 54);
+            Delete.TabIndex = 22;
+            Delete.Text = "DEL";
+            Delete.UseVisualStyleBackColor = true;
             // 
             // Calculator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(309, 502);
-            Controls.Add(button5);
+            BackColor = SystemColors.ControlLight;
+            ClientSize = new Size(297, 477);
+            Controls.Add(Delete);
             Controls.Add(Power);
             Controls.Add(Pi);
             Controls.Add(Point);
@@ -314,9 +318,9 @@
             Controls.Add(Sqrt);
             Controls.Add(NaturalLog);
             Controls.Add(Clear);
+            KeyPreview = true;
             MaximizeBox = false;
             MaximumSize = new Size(325, 541);
-            MinimumSize = new Size(325, 541);
             Name = "Calculator";
             Text = "Calculator";
             ResumeLayout(false);
@@ -329,7 +333,7 @@
         private Button NaturalLog;
         private Button Sqrt;
         private TextBox Output;
-        private Button button5;
+        private Button Delete;
         private Button button6;
         private Button button7;
         private Button button8;

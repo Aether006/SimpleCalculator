@@ -133,19 +133,18 @@ namespace SimpleCalculator
             }
         }
 
+      
+        private void Point_Click(object sender, EventArgs e)
+        {
+            Output.Text += ".";
+        }
+
         private void Multiply_Click(object sender, EventArgs e)
         {
             firstNum = Convert.ToDouble(Output.Text);
             Output.Clear();
             oper = '*';
         }
-
-        private void Point_Click(object sender, EventArgs e)
-        {
-            Output.Text += ".";
-        }
-
-
 
         private void Add_Click(object sender, EventArgs e)
         {
